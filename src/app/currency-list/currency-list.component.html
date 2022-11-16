@@ -1,0 +1,16 @@
+<ejs-grid
+  #table
+  [dataSource]="data"
+  [editSettings]="editSettings"
+  [toolbar]="toolbar"
+  (dataSourceChanged)="onDataChanged($event)"
+></ejs-grid>
+<ejs-dialog
+  #ejDialog
+  [content]="dialogContent"
+  width="250px"
+  isModal="true"
+  (overlayClick)="onOverlayClick()"
+  [visible]="false"
+>
+</ejs-dialog>

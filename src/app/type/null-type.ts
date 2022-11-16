@@ -1,0 +1,1 @@
+export type nullAbleType<Type>=Type|null;
